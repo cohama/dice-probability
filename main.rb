@@ -1,12 +1,15 @@
-ans = [0, 0, 0, 0, 0, 0]
+print "x: "
+x = readline.to_i
+print "y: "
+y = readline.to_i
+N = 5**x + 3**y + 5**(y-x)
 
-def dice
-  (rand * 6).to_i
-end
+p5 = 5**x.to_f / N
+p3 = 3**y.to_f / N
+p1 = 5**(y-x).to_f / N
 
-100000.times do |i|
-  ans[dice] += 1
-end
-
-p ans.map { |a| (a.to_f) / ans[0] }
+puts "N : #{N}"
+puts "p5: #{p5}"
+puts "p3: #{p3}"
+puts "p1: #{p1}"
 
